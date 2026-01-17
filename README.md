@@ -1,4 +1,4 @@
-# 🎓 Hackcrypt - Smart Student Attendance Management System
+# 🎓 EduSphere - Smart Student Attendance Management System
 
 > A modern, intelligent attendance tracking system powered by biometric recognition and real-time verification. Built for educational institutions to streamline attendance management with cutting-edge technology.
 
@@ -15,7 +15,7 @@
 - 👤 **Attendance Dashboard** - Real-time view of your attendance statistics
 - 📊 **Subject-wise Tracking** - Monitor attendance by individual subjects
 - 🔐 **Multiple Verification Methods**
-  - Fingerprint verification
+  - Fingerprint verification (coming soon)
   - Facial recognition
   - QR code scanning
   - ID verification

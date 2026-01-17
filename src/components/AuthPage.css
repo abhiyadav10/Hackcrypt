@@ -1,0 +1,169 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f172a;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 850px;
+  height: 450px;
+  background: #ffffff;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* FORMS */
+.form {
+  width: 50%;
+  padding: 50px;
+  transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+              opacity 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form h2 {
+  color: #253aeb;
+  margin-bottom: 20px;
+}
+o
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-bottom: 2px solid #cbd5e1;
+  outline: none;
+}
+
+.form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+}
+
+.form p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.form span {
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* LOGIN & REGISTER */
+.login {
+  transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+              opacity 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.register {
+  position: absolute;
+  right: -50%;
+  opacity: 0;
+  transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.1s,
+              right 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.1s,
+              opacity 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.1s;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+              clip-path 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.overlay h1 {
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 14px;
+  width: 70%;
+  text-align: center;
+}
+
+/* ACTIVE STATE */
+.box.active .login {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.box.active .register {
+  right: 0;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.box.active .overlay {
+  transform: translateX(-100%);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+}
+/* Input group for icon + input */
+.input-group {
+  position: relative;
+  margin: 12px 0;
+}
+
+.input-group .icon {
+  position: absolute;
+  left: -10px;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 5px; 
+  color: #2563eb;
+  pointer-events: none; /* icon won't block typing */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* add left padding for icon */
+  border: none;
+  border-bottom: 2px solid #cbd5e1;
+  outline: none;
+  font-size: 20px;
+  padding-left: 34px;
+}
+
+/* Optional: hide icon on smaller screens or toggle off */
+.icon.off {
+  display: none;
+}

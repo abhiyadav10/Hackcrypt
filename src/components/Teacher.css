@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  background: #eaf3ff;
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+
+/* Header */
+.home-header {
+  background: #2536eb;
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header-icons {
+  display: flex;
+  gap: 18px;
+}
+
+.icon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.bell-wrapper {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+/* Body */
+.body-content {
+  padding: 14px;
+}
+
+/* Quick Actions */
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.icon-btn {
+  background: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.qa-icon {
+  font-size: 24px;
+  color: #1e5ad7;
+  margin-bottom: 6px;
+}
+
+.icon-btn span {
+  font-size: 13px;
+  color: #333;
+}
+
+/* Summary */
+.summary-card {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.summary-item {
+  text-align: center;
+}
+
+.summary-item strong {
+  font-size: 20px;
+  display: block;
+}
+
+.summary-item span {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Info Cards */
+.info-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.info-icon {
+  font-size: 26px;
+  color: #1e5ad7;
+}
+
+.info-text strong {
+  font-size: 20px;
+  display: block;
+}
+
+.info-text span {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Attendance */
+.attendance-section {
+  background: #fff8d6;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.attendance-header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.attendance-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-top: 1px solid #ddd;
+  font-size: 13px;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #777;
+}
+
+.nav-item svg {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.nav-item.active {
+  color: #0b3b8c;
+}

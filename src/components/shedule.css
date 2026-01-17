@@ -1,0 +1,61 @@
+.schedule-container {
+  padding: 20px;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.day-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.day-title {
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.schedule-table th {
+  background-color: #3498db;
+  color: white;
+}
+
+.status-present {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.status-absent {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .schedule-table th,
+  .schedule-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
